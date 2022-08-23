@@ -26,7 +26,7 @@ setInterval(function () {
     if ((characterTop > 480) || ((blockleft < 20) && (blockleft - 50) && ((cTop < holeTop) || (cTop > holeTop + 130)))) { //los statements OR primero indican que si el bloque izquierdo es menos que 20 y tambien si el bloque izquierdo es mayor que el numero -50, significa que el bloque esta tocando la pelota en  cualquier forma a la izquierda.
         //o completamente en el medio.
         //el ultimo statement OR, indica que si cTop es mayor a holeTop+130. 130 porque la altura de Hole es de 150.Es 150 - la pelota. La pelota tiene 20 px, por lo que el agujero es de solo 130px.
-        alert("Game over. score " + counter); //si la pelota llega hasta el final del cuadro por gravedad, el cartel dara por finalizado el juego, muestra el score logrado
+        alert("Game over! Puntaje obtenido: " + counter); //si la pelota llega hasta el final del cuadro por gravedad, el cartel dara por finalizado el juego, muestra el score logrado
         character.style.top = 100 + "px"; //vuelve a la posicion de 100px 
         counter = 0;
     }
